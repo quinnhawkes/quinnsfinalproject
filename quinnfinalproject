@@ -1,0 +1,39 @@
+var bitHead = function(bitx,bity,bitH){
+  fill(255, 245, 219);
+  ellipse(bitx+bitH/102,bity+bitH/102,bitH/102*88,bitH/102*100);//head
+  ellipse(bitx-bitH/102*45,bity-bitH/102*7,bitH/102*10,bitH/102*18);//ears
+  ellipse(bitx+bitH/102*43,bity-bitH/102*5,bitH/102*10,bitH/102*18);//ears
+  fill(161, 152, 29);//hair
+  rect(bitx-bitH/102*33,bity-bitH/102*36,-bitH/102*11,bitH/102*102);//hair
+  rect(bitx+bitH/102*30,bity-bitH/102*33,bitH/102*10,bitH/102*102);//hair
+  ellipse(bitx+bitH/102*16,bity-bitH/102*38,bitH/102*54,bitH/102*28);//hair
+  ellipse(bitx-bitH/102*20,bity-bitH/102*38,bitH/102*55,bitH/102*28);//hair
+  fill(8, 105, 28);//eyes
+  ellipse(bitx-bitH/102*17,bity-bitH/102*2,bitH/102*10,bitH/102*10);//eyes
+  ellipse(bitx+bitH/102*16,bity-bitH/102*2,bitH/102*10,bitH/102*10);//eyes
+  stroke(0, 0, 0);
+  fill(252, 244, 192);//nose
+  ellipse(bitx+bitH/102,bity+bitH/102*11,bitH/102*12,bitH/102*5);//nose
+  fill(250, 247, 247);//teeth
+  arc(bitx+bitH/102,bity+bitH/102*22,bitH/102*30,bitH/102*33,1,180);//mouth
+   };
+   
+var bitBody = function(bitx,bity,bitH){
+  noStroke();
+  fill(255, 247, 214);
+  rect(bitx-bitH/102*15,bity+bitH/102*39,bitH/102*27,bitH/102*26);//neck
+  fill(3, 3, 3);
+  rect(bitx-bitH/102*29,bity+bitH/102*58,bitH/102*10,bitH/102*30);//clothes
+  rect(bitx+bitH/102*16,bity+bitH/102*58,bitH/102*10,bitH/102*30);
+  rect(bitx+bitH/102*18,bity+bitH/102*86,-bitH/102*42,bitH/102*60);
+};
+
+
+var callBitmoji=function(bitx,bity,bitH){
+    bitHead(bitx,bity,bitH);
+    bitBody(bitx,bity,bitH);
+};
+
+
+
+
